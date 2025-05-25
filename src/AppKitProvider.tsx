@@ -31,7 +31,7 @@ export const privadoChain = defineChain({
     default: { http: ['http://subnets.avax.network/privachain/testnet/rpc'] },
   },
   blockExplorers: {
-    default: { name: 'Privado Chain Explorer', url: 'https://subnets-test.avax.network/privachain' },
+    default: { name: 'Privado Chain', url: 'http://subnets-test.avax.network/privachain' },
   },
   contracts: {
   },
