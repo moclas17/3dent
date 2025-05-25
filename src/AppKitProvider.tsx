@@ -28,7 +28,7 @@ export const privadoChain = defineChain({
   name: 'privadoChain',
   nativeCurrency: { name: 'Privado', symbol: 'PCH', decimals: 18 },
   rpcUrls: {
-    default: { http: ['https://testnet-privachain-z3e7a.avax-test.network/ext/bc/QNer9eHSFbFv4p2VtXDUAvfzuNBA6EnQUd4dE8wkCtnsDaDDm/rpc?token=6a28c74172b505c79711f34280b1e87abf7c2b806b0eec239e4804029176c80f'] },
+    default: { https: ['https://testnet-privachain-z3e7a.avax-test.network/ext/bc/QNer9eHSFbFv4p2VtXDUAvfzuNBA6EnQUd4dE8wkCtnsDaDDm/rpc?token=6a28c74172b505c79711f34280b1e87abf7c2b806b0eec239e4804029176c80f'] },
   },
   blockExplorers: {
     default: { name: 'Privado Chain Explorer', url: 'https://subnets-test.avax.network/privachain' },
