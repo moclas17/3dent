@@ -33,6 +33,8 @@ export const privadoChain = defineChain({
   blockExplorers: {
     default: { name: 'Privado Chain Explorer', url: 'https://subnets-test.avax.network/privachain' },
   },
+  contracts: {
+  },
 })
 
 
