@@ -26,8 +26,8 @@ export const CIRCUIT_CONFIG = {
 } as const;
 
 // Explorer URL
-export const EXPLORER_BASE_URL = "https://testnet.snowtrace.io/address/";
-export const EXPLORER_BASE_URL_TX = "https://testnet.snowtrace.io/tx/";
+export const EXPLORER_BASE_URL = "https://subnets-test.avax.network/privachain/address/";
+export const EXPLORER_BASE_URL_TX = "https://subnets-test.avax.network/privachain/tx/";
 
 // Mode types
 export type EERCMode = "standalone" | "converter";

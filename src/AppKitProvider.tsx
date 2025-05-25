@@ -1,7 +1,7 @@
 import { createAppKit } from "@reown/appkit/react";
 
+import { defineChain } from 'viem'
 import { WagmiProvider } from "wagmi";
-import { avalancheFuji } from "@reown/appkit/networks";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 
@@ -22,8 +22,22 @@ const metadata = {
   icons: ["https://avatars.githubusercontent.com/u/179229932"],
 };
 
+
+export const privadoChain = defineChain({
+  id: 74074,
+  name: 'privadoChain',
+  nativeCurrency: { name: 'Privado', symbol: 'PCH', decimals: 18 },
+  rpcUrls: {
+    default: { http: ['https://subnets.avax.network/privachain/testnet/rpc'] },
+  },
+  blockExplorers: {
+    default: { name: 'Privado Chain Explorer', url: 'https://subnets-test.avax.network/privachain' },
+  },
+})
+
+
 // 3. Set the networks
-const networks = [avalancheFuji];
+const networks = [privadoChain];
 
 // 4. Create Wagmi Adapter
 const wagmiAdapter = new WagmiAdapter({
@@ -35,7 +49,7 @@ const wagmiAdapter = new WagmiAdapter({
 // 5. Create modal
 createAppKit({
   adapters: [wagmiAdapter],
-  networks: [avalancheFuji],
+  networks: [privadoChain],
   projectId,
   metadata,
   features: {
